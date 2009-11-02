@@ -1,0 +1,134 @@
+/*  -----------------------------
+ *  Artisan Chairs stylesheet
+ *  
+ *  Stucture
+ *      default overrides
+ *      layout
+ *      classes
+    ---------------------------- */
+
+/* --------------------
+ Default Overrides
+----------------------*/
+body {
+	background:url(images/bg.png);
+	font-family:"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+ul, li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+a {
+	color:#336699;
+	text-decoration:none;
+}
+a:hover {
+	color:#336699;
+}
+/* --------------------
+ Layout
+----------------------*/
+#bodyWrapper, #siteWrapper {
+    position:relative;
+}
+#siteWrapper {
+    margin:0 auto;
+    width:94%;
+}
+
+    /*---------
+     Header
+     -----------*/
+    #headerWrapper{
+        position:relative;
+        height:100px;
+		text-shadow:0 2px 3px #000000;
+    }
+        #header {
+        }
+
+    /*----------------
+      Site Navigation
+      -----------------*/
+    #siteNavWrapper {
+		height:100px;
+        font-size:1.5em;
+		font-variant:small-caps;
+        padding:0 0 0 10px;
+        position:absolute;
+        right:0;
+		top:0px;
+    }
+		#siteNav ul {
+			margin:0 0 0 50px;
+		}
+		#siteNav li {
+			float:left;
+			margin:0 0 0 15px;
+		}
+		#siteNav li a {
+			color:#dedede;
+			padding:3px 5px;
+		}
+		#siteNav li a:hover {
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			background:rgba(51,102,153,.5);
+			color:#ffffff;
+		}
+
+    /*------------
+     Below Neck
+     -------------*/
+    #bnWrapper {
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		background:#f0f0f0;
+        border:1px solid #cdcdcd;
+		text-shadow:0 1px 1px #B3CDEC;
+    }
+
+
+    /*---------
+      Content
+      ----------*/
+    #contentWrapper {
+        padding:10px 5px;
+    }
+        #welcomeText {
+            font-size:1.2em;
+			margin:0 0 10px 0;
+        }
+
+    /*----------
+      Footer
+      -----------*/
+    #footerWrapper {
+        background:#454545;
+		color:#f0f0f0;
+        padding:5px;
+		text-shadow:0 1px 2px #07090D;
+    }
+
+#blurb {
+    float:left;
+}
+
+#slideshowWrapper {
+    float:left;
+}
+
+
+
+/* --------------------
+ Classes
+----------------------*/
+.clear {
+    clear:both;
+}
