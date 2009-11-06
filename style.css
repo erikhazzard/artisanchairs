@@ -66,12 +66,12 @@ a:hover {
       -----------------*/
     #siteNavWrapper {
 		height:100px;
-        font-size:1.5em;
+        font-size:1.6em;
 		font-variant:small-caps;
         padding:0 0 0 10px;
         position:absolute;
         right:0;
-		top:0px;
+		top:25px;
     }
 		#siteNav ul {
 			margin:0 0 0 50px;
@@ -82,7 +82,7 @@ a:hover {
 		}
 		#siteNav li a {
 			color:#dedede;
-			padding:3px 5px;
+			padding:5px;
 		}
 		#siteNav li a:hover {
 			-moz-border-radius:5px;
@@ -109,7 +109,7 @@ a:hover {
 		border-radius:5px;
 		background:#f0f0f0;
         border:1px solid #cdcdcd;
-		text-shadow:0 1px 1px #B3CDEC;
+		text-shadow:0 1px 0 #B3CDEC;
     }
 
 
@@ -128,14 +128,41 @@ a:hover {
 	    Blurb Slideshow
 	 --------------------*/
 	#bsWrapper {
-		margin:20px 0;
+		margin:20px 0 40px;
+		position:relative;
 	}
 		#blurb {
-			
+			padding:0 360px 0 0;
+		}
+		#slideShowWrapper {
+			position:absolute;
+			right:0px;
+			top:0px;
+			width:350px;
 		}
 	
 	
-
+	
+	/*-------------------
+		Site Info Boxes
+	--------------------*/
+	#siteInfoBoxesWrapper {
+		position:relative;
+	}
+	
+		#siteInfoBox1Wrapper, #siteInfoBox2Wrapper {
+			float:left;
+			width:50%;
+		}
+		
+		.infoBoxHeader {
+			font-size:1.2em;
+			font-variant:small-caps;
+			font-weight:bold;
+		}
+	
+	
+	
 
     /*----------
       Footer
@@ -150,17 +177,20 @@ a:hover {
         background:#454545;
 		color:#f0f0f0;
 		font-size:.8em;
+		margin:20px 0 0 0;
         padding:5px;
+		position:relative;
 		text-shadow:0 1px 2px #07090D;
     }
-
-#blurb {
-    float:left;
-}
-
-#slideshowWrapper {
-    float:left;
-}
+	
+	#footer1, #footer2, #footer3 {
+		float:left;
+		width:33%;
+	}
+	
+	#legalInfo {
+		margin:20px 0 0 0;
+	}
 
 
 
