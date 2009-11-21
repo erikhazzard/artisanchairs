@@ -2,7 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>Artisan Chairs | Custom Woodwork Chairs by Mark Warner</title>
+	
     <link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="slideshow.css" rel="stylesheet" type="text/css" />
 	
 	<script type="text/javascript">
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -14,8 +16,26 @@
 			pageTracker._trackPageview();
 			} catch(err) {}
 	</script>
-	<script src="mootools.js" type="text/javascript"></script>
-	<script src="mootoolsmore.js" type="text/javascript"></script>
+	
+	<script src="scripts/mootools.js" type="text/javascript"></script>
+	
+	<script src="scripts/slideshow.js" type="text/javascript"></script>
+	<script type="text/javascript">		
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+	      '1.jpg': { caption: 'Airbrush finish.' }, 
+	      '2.jpg': { caption: 'Recliner.' }, 
+	      '3.jpg': { caption: 'Go Gators.' }, 
+	      '4.jpg': { caption: 'Pair of white adirondacks.' },
+		  '5.jpg': { caption: 'Classic Cedar.' }
+	    };
+	    var myShow = new Slideshow.KenBurns('show', data, { captions: true, controller: true, delay: 7000, duration: 5000, height: 300, hu: 'images/slideshow/base/', width: 400 });
+		});
+	//]]>
+	</script>
+	
+	
 </head>
 <body>
     
@@ -51,31 +71,37 @@
                     </div>
                     
                     <!-- Short info and gallery (blurb + slideshow wrapper -->
-                    <div id="bsWrapper">
-                        <div id="blurb">
-                            Artisan Chairs - Custom woodwork chairs - coming soon
-                        </div>
+                    <div id="hsWrapper">
+                        <div id="homeWrapper">
+						
+                            <div id="blurb">
+								Artisan Chairs - Custom woodwork chairs - coming soon
+							</div>
+							
+							<!-- customize and gallery info -->
+							<div id="siteInfoBoxesWrapper">
+								<div id="siteInfoBoxes">
+									<div id="siteInfoBox1Wrapper">
+										<span class="infoBoxHeader">Customize</span> - Build Your Own Chair
+									</div>
+									<div id="siteInfoBox2Wrapper">
+										<span class="infoBoxHeader">Gallery</span> - View and Order Pre-built Chairs
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div>
 
                         <div id="slideShowWrapper">
-                            Slideshow
+                             <div id="show" class="slideshow">
+								<img src="images/slideshow/base/1.jpg" alt="Volcano Asención in Ometepe, Nicaragua." />
+							</div>
                         </div>
 					
 						
                         <div class="clear"></div>
                     </div>
 
-                    <!-- userTabs -->
-                    <div id="siteInfoBoxesWrapper">
-                        <div id="siteInfoBoxes">
-                            <div id="siteInfoBox1Wrapper">
-								<span class="infoBoxHeader">Customize</span> - Build Your Own Chair
-							</div>
-							<div id="siteInfoBox2Wrapper">
-								<span class="infoBoxHeader">Gallery</span> - View and Order Pre-built Chairs
-							</div>
-							<div class="clear"></div>
-                        </div>
-                    </div>
     
                 </div>
             </div>

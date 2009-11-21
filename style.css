@@ -11,7 +11,7 @@
  Default Overrides
 ----------------------*/
 body {
-	background:url(/images/bg.jpg);
+	background:url(images/bg.jpg);
 	font-family:Helvetica,"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
     font-size:1em;
 	margin:0;
@@ -109,7 +109,8 @@ a:hover {
 		border-radius:5px;
 		background:#f0f0f0;
         border:1px solid #cdcdcd;
-		text-shadow:0 1px 0 #B3CDEC;
+		color:#343434;
+		text-shadow:0 1px 0 #fcfcfc;
     }
 
 
@@ -127,38 +128,49 @@ a:hover {
 	/*-------------------
 	    Blurb Slideshow
 	 --------------------*/
-	#bsWrapper {
+	#hsWrapper {
 		margin:20px 0 40px;
 		position:relative;
 	}
-		#blurb {
-			padding:0 360px 0 0;
+		#homeWrapper {
+			padding:0 410px 0 0;
+			height:275px;
 		}
+		
+		#blurb {
+			margin:0 0 1em 0;
+		}		
+		/*-------------------
+			Site Info Boxes
+		--------------------*/
+		#siteInfoBoxesWrapper {
+			position:relative;
+		}
+		
+			#siteInfoBox1Wrapper, #siteInfoBox2Wrapper {
+				float:left;
+				width:50%;
+			}
+			
+			.infoBoxHeader {
+				font-size:1.2em;
+				font-variant:small-caps;
+				font-weight:bold;
+			}
+		
+		/*-------------------
+		Slideshow
+		--------------------*/
 		#slideShowWrapper {
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			border--radius:5px;
+			border:2px solid #343434;
+			overflow:hidden;
 			position:absolute;
 			right:0px;
 			top:0px;
-			width:350px;
-		}
-	
-	
-	
-	/*-------------------
-		Site Info Boxes
-	--------------------*/
-	#siteInfoBoxesWrapper {
-		position:relative;
-	}
-	
-		#siteInfoBox1Wrapper, #siteInfoBox2Wrapper {
-			float:left;
-			width:50%;
-		}
-		
-		.infoBoxHeader {
-			font-size:1.2em;
-			font-variant:small-caps;
-			font-weight:bold;
+			width:400px;
 		}
 	
 	
@@ -168,16 +180,13 @@ a:hover {
       Footer
       -----------*/
     #footerWrapper {
-		-moz-border-radius-bottomleft:5px;
-		-moz-border-radius-bottomright:5px;
-		-webkit-border-bottom-left-radius:5px;
-		-webkit-border-bottom-right-radius:5px;
-		border-bottom-left-radius:5px;
-		border-bottom-right-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		border--radius:5px;
         background:#454545;
 		color:#f0f0f0;
 		font-size:.8em;
-		margin:20px 0 0 0;
+		margin:20px 5px 5px;
         padding:5px;
 		position:relative;
 		text-shadow:0 1px 2px #07090D;
@@ -193,6 +202,16 @@ a:hover {
 	}
 
 
+	
+	
+	
+/*----------------------------------------
+  Slide Show Styles
+-----------------------------------------*/
+
+  
+  
+  
 
 /* --------------------
  Classes
