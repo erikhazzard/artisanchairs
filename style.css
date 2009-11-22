@@ -180,14 +180,25 @@ a:hover {
 		#slideShowWrapper {
 			-moz-border-radius:5px;
 			-webkit-border-radius:5px;
-			border--radius:5px;
+			border-radius:5px;
+            background:none !important;
 			border:2px solid #343434;
 			overflow:hidden;
 			position:absolute;
 			right:0px;
 			top:0px;
-			width:400px;
+			width:402px;
 		}
+            #slideShow {
+                -moz-border-radius:5px;
+                -webkit-border-radius:5px;
+                border-radius:5px;
+                background:#343434 !important;
+                border:1px solid #aaaaaa;
+                padding:1px !important;
+                position:relative;
+                overflow:hidden;
+            }
 	
 	
 	
