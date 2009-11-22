@@ -118,8 +118,24 @@ a:hover {
       Content
       ----------*/
     #contentWrapper {
-        padding:10px 5px;
+        padding:5px;
     }
+		    /*---------
+			Content Nav
+			----------*/
+			#contentNav {
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			border--radius:5px;
+			background:#454545;
+			color:#f0f0f0;
+			font-size:.8em;
+			margin:0;
+			padding:5px;
+			position:relative;
+			text-shadow:0 1px 2px #07090D;	
+			}
+			
         #welcomeText {
             font-size:1.2em;
 			margin:0 0 10px 0;
