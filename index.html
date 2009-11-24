@@ -24,11 +24,11 @@
 	//<![CDATA[
 	  window.addEvent('domready', function(){
 	    var data = {
-	      '1.jpg': { caption: 'Airbrush finish.' }, 
-	      '2.jpg': { caption: 'Recliner.' }, 
-	      '3.jpg': { caption: 'Go Gators.' }, 
-	      '4.jpg': { caption: 'Pair of white adirondacks.' },
-		  '5.jpg': { caption: 'Classic Cedar.' }
+	      '5.jpg': { caption: 'Classic Cedar' },
+	      '1.jpg': { caption: 'Airbrush finish' }, 
+	      '2.jpg': { caption: 'Recliner with ottoman' }, 
+	      '3.jpg': { caption: 'Go Gators!' }, 
+	      '4.jpg': { caption: 'Pair of white adirondacks' }
 	    };
 	    var myShow = new Slideshow.KenBurns('show', data, { captions: true, controller: true, delay: 7000, duration: 5000, height: 300, hu: 'images/slideshow/base/', width: 400 });
 		});
@@ -82,17 +82,23 @@
                         <div id="homeWrapper">
 						
                             <div id="blurb">
-								Artisan Chairs - Custom woodwork chairs - coming soon
+								<h2>Artisan Chairs - Custom woodwork chairs - coming soon</h2>
 							</div>
 							
 							<!-- customize and gallery info -->
 							<div id="siteInfoBoxesWrapper">
 								<div id="siteInfoBoxes">
 									<div id="siteInfoBox1Wrapper">
-										<span class="infoBoxHeader">Customize</span> - Build Your Own Chair
+										<div class="infoBoxHeader">Customize</div> 
+										Build Your Own Chair<br />
+										<a href="customize.php" title="Build and purchase your own custom artisan chair"><img src="images/hammer.png" alt="Customize and order a handcrafted artisan chair" /></a>
+										
 									</div>
 									<div id="siteInfoBox2Wrapper">
-										<span class="infoBoxHeader">Gallery</span> - View and Order Pre-built Chairs
+										<div class="infoBoxHeader">Gallery</div>
+										View Custom Handcrafted Chairs<br />
+										<a href="gallery.php" title="View handcrafted artisan chairs"><img src="images/gallery.png" alt="View custom handcrafted chairs" /></a>
+										
 									</div>
 									<div class="clear"></div>
 								</div>
@@ -117,27 +123,22 @@
 
             <!-- Footer -->
             <div id="footerWrapper">
-                <div id="footer1">
-					Site Links <br /> 
-					<a href="link" title="Home Page">Home</a><br />
-					<a href="link" title="Home Page">About</a><br />
-					<a href="link" title="Home Page">Gallery</a><br />
-					<a href="link" title="Home Page">Customize</a><br />
-					<a href="link" title="Home Page">Blog</a><br />
+                <div id="footerLinks">
+					<a href="link" title="Home Page">Home</a> | 
+					<a href="link" title="Home Page">About</a> |
+					<a href="link" title="Home Page">Gallery</a> |
+					<a href="link" title="Home Page">Customize</a> |
+					<a href="link" title="Home Page">Blog</a> 
                 </div>
-				
-				<div id="footer2">
-					Blogroll
-				</div>
-				
-				<div id="footer3">
-					Artisan Chairs Info
+				<div id="footerContact">
+					<div class="strong">Artisan Chairs | Mark Warner</div>
+					<div class="bwText lightGrey">moc.liamg {ta} sriahcnasitra</div>
 				</div>
 				
 				<div class="clear"></div>
 				
 				<div id="legalInfo">
-					Legal Text
+					Copyleft license.  Feel free to use, modify, and reproduce any and all content contained herewithin.
 				</div>	
 					
             </div>

@@ -12,7 +12,7 @@
 ----------------------*/
 body {
 	background:url(images/bg.jpg);
-	font-family:Helvetica,"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	font-family:"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif !important;
     font-size:1em;
 	margin:0;
     padding:0;
@@ -25,19 +25,24 @@ ul, li {
 	padding:0;
 }
 
-h1 {
+h1, h2, h3, h4{
 	font-size:1.4em;
 	font-weight:normal;
 	margin:0;
 	padding:0;
 }
-
+h2 {
+	font-size:1.2em;
+}
 a {
 	color:#336699;
 	text-decoration:none;
 }
 a:hover {
 	color:#336699;
+}
+img {
+	border:none;
 }
 /* --------------------
  Layout
@@ -47,6 +52,7 @@ a:hover {
 }
 #siteWrapper {
     margin:0 auto;
+	margin-bottom:3%;
     width:94%;
 }
 
@@ -109,7 +115,7 @@ a:hover {
 		border-radius:5px;
 		background:#f0f0f0;
         border:1px solid #cdcdcd;
-		color:#343434;
+		color:#232323;
 		text-shadow:0 1px 0 #fcfcfc;
     }
 
@@ -127,10 +133,10 @@ a:hover {
 			-moz-border-radius:5px;
 			-webkit-border-radius:5px;
 			border--radius:5px;
-			background:#454545;
+			background:#232323;
 			color:#f0f0f0;
 			font-size:.8em;
-			margin:0;
+			margin:0 0 1em 0;
 			padding:5px;
 			position:relative;
 			text-shadow:0 1px 2px #07090D;	
@@ -182,7 +188,7 @@ a:hover {
 			-webkit-border-radius:5px;
 			border-radius:5px;
             background:none !important;
-			border:2px solid #343434;
+			border:2px solid #232323;
 			overflow:hidden;
 			position:absolute;
 			right:0px;
@@ -193,8 +199,8 @@ a:hover {
                 -moz-border-radius:5px;
                 -webkit-border-radius:5px;
                 border-radius:5px;
-                background:#343434 !important;
-                border:1px solid #aaaaaa;
+                background:#232323 !important;
+                border:1px solid #f0f0f0;
                 padding:1px !important;
                 position:relative;
                 overflow:hidden;
@@ -210,22 +216,37 @@ a:hover {
 		-moz-border-radius:5px;
 		-webkit-border-radius:5px;
 		border--radius:5px;
-        background:#454545;
-		color:#f0f0f0;
+        background:#232323;
+		color:#ffffff;
 		font-size:.8em;
 		margin:20px 5px 5px;
         padding:5px;
 		position:relative;
 		text-shadow:0 1px 2px #07090D;
     }
-	
-	#footer1, #footer2, #footer3 {
-		float:left;
-		width:33%;
-	}
+		#footerWrapper a {
+			color:#ffffff;
+			padding:1px 2px;
+			text-shadow:0 1px 2px #232323;
+		}
+			#footerWrapper a:hover {
+				color:#9CB9D5;
+			}
+		#footerLinks, #footerContact {
+			float:left;
+			text-align:left;
+			width:50%;
+		}
+		#footerContact {
+			line-height:1.5em;
+			text-align:right;
+		}
 	
 	#legalInfo {
-		margin:20px 0 0 0;
+		color:#999999;
+		font-size:.8em;
+		margin:10px 0 0 0;
+		text-align:center;
 	}
 
 
@@ -245,4 +266,14 @@ a:hover {
 ----------------------*/
 .clear {
     clear:both;
+}
+.bwText {
+	direction:rtl;
+	unicode-bidi:bidi-override;
+}
+.strong {
+	font-weight:bold;
+}
+.lightGrey {
+	color:#999999;
 }

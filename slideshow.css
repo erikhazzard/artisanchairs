@@ -87,25 +87,20 @@ Notes:
 	border: 0;
 }
 
-/**
-HTML:
-	<div class="slideshow-captions">
-		...
-	</div>
-	
-Notes:
-	Customize the hidden / visible classes to affect the captions animation.
-*/
 
 .slideshow-captions {
 	background: #000;
 	bottom: 0;
-	color: #FFF;
-	font: normal 12px/22px Arial, sans-serif;
+	color: #fff;
+	height:20px !important;
+	font-size:.9em;
+	font-weight:bold;
 	left: 0;
 	overflow: hidden;
+	padding:5px 0 0 0;
 	position: absolute;
 	text-indent: 10px;
+	text-shadow:none;
 	width: 100%;
 	z-index: 10000;
 }
@@ -119,17 +114,6 @@ Notes:
 }
 
 /**
-HTML:
-	<div class="slideshow-controller">
-		<ul>
-			<li class="first"><a /></li>
-			<li class="prev"><a /></li>
-			<li class="pause play"><a /></li>
-			<li class="next"><a /></li>
-			<li class="last"><a /></li>
-		</ul>
-	</div>
-	
 Notes:
 	Customize the hidden / visible classes to affect the controller animation.
 */
